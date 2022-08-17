@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function Callback</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#img").hide("slow", function(){
+      alert("The Image is now hidden");
+    });
+  });
+});
+</script>
+</head>
+<body>
+	<img id="img" src="image.png" height="500px" width="500px"><br>
+<!-- <img id="img" src="https://wallpapercave.com/wp/wp2599602.jpg" height="500px" width="500px"><br> -->
+<br>
+<button>Hide</button>
+</body>
+</html>
